@@ -1,0 +1,650 @@
+PS D:\WorkSpace\BabelDOC> py -3.10 -m babeldoc.main --files demo2.pdf --translate-table-text --min-text-length 2 --openai --openai-base-url "http://127.0.0.1:8006/v1"  --openai-model "gpt-4o=02040" --openai-api-key "123" -li en -lo zh --debug --show-char-box --watermark-output-mode no_watermark  --ignore-cache
+[08/01/25 13:56:27] INFO     INFO:babeldoc.docvision.base_doclayout:Loading ONNX model...                                                            base_doclayout.py:43
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+[08/01/25 13:56:28] INFO     INFO:babeldoc.docvision.doclayout:Available Provider: CPUExecutionProvider                                                   doclayout.py:52
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+[08/01/25 13:56:29] DEBUG    DEBUG:babeldoc.progress_monitor:report_interval: 0.1                                                                  progress_monitor.py:49
+                    INFO     INFO:babeldoc.format.pdf.high_level:start to translate: demo2.pdf                                                          high_level.py:476
+                    DEBUG    DEBUG:__main__:{'type': 'stage_summary', 'stages': [{'name': 'Parse PDF and Create Intermediate Representation', 'percent':      main.py:535
+                             0.10776980613646772}, {'name': 'DetectScannedFile', 'percent': 0.018699435200732716}, {'name': 'Parse Page Layout', 'percent':              
+                             0.1070828881086857}, {'name': 'Parse Table', 'percent': 0.007632422530911312}, {'name': 'Parse Paragraphs', 'percent':                      
+                             0.04777896504350481}, {'name': 'Parse Formulas and Styles', 'percent': 0.012669821401312778}, {'name': 'Automatic Term                      
+                             Extraction', 'percent': 0.22897267592733936}, {'name': 'Translate Paragraphs', 'percent': 0.3584185620515952}, {'name':                     
+                             'Typesetting', 'percent': 0.03594871012059228}, {'name': 'Add Fonts', 'percent': 0.0046557777438559}, {'name': 'Generate drawing            
+                             instructions', 'percent': 0.014959548160586172}, {'name': 'Subset font', 'percent': 0.007021828728438408}, {'name': 'Save PDF',             
+                             'percent': 0.04838955884597772}], 'part_index': 0, 'total_parts': 1}                                                                        
+                    DEBUG    DEBUG:babeldoc.format.pdf.high_level:Memory monitoring started                                                             high_level.py:380
+                    DEBUG    DEBUG:babeldoc.format.pdf.high_level:debug mode, save decompressed input pdf                                               high_level.py:763
+                    DEBUG    DEBUG:babeldoc.format.pdf.high_level:start parse il from C:\Users\ShilinX\.cache\babeldoc\working\demo2\input.pdf          high_level.py:818
+                    DEBUG    DEBUG:__main__:{'type': 'progress_start', 'stage': 'Parse PDF and Create Intermediate Representation', 'stage_progress': 0.0,    main.py:535
+                             'stage_current': 0, 'stage_total': 4, 'overall_progress': 0.0, 'part_index': 1, 'total_parts': 1}                                           
+                    DEBUG    DEBUG:__main__:{'type': 'progress_update', 'stage': 'Parse PDF and Create Intermediate Representation', 'stage_progress': 25.0,  main.py:535
+                             'stage_current': 1, 'stage_total': 4, 'overall_progress': 2.694245153411693, 'part_index': 1, 'total_parts': 1}                             
+                    DEBUG    DEBUG:__main__:{'type': 'progress_update', 'stage': 'Parse PDF and Create Intermediate Representation', 'stage_progress': 50.0,  main.py:535
+                             'stage_current': 2, 'stage_total': 4, 'overall_progress': 5.388490306823386, 'part_index': 1, 'total_parts': 1}                             
+                    DEBUG    DEBUG:__main__:{'type': 'progress_update', 'stage': 'Parse PDF and Create Intermediate Representation', 'stage_progress': 100.0, main.py:535
+                             'stage_current': 4, 'stage_total': 4, 'overall_progress': 10.776980613646773, 'part_index': 1, 'total_parts': 1}                            
+                    DEBUG    DEBUG:__main__:{'type': 'progress_end', 'stage': 'Parse PDF and Create Intermediate Representation', 'stage_progress': 100.0,    main.py:535
+                             'stage_current': 4, 'stage_total': 4, 'overall_progress': 10.776980613646773, 'part_index': 1, 'total_parts': 1}                            
+                    DEBUG    DEBUG:babeldoc.format.pdf.high_level:finish parse il from C:\Users\ShilinX\.cache\babeldoc\working\demo2\input.pdf         high_level.py:827
+                    DEBUG    DEBUG:babeldoc.format.pdf.high_level:finish create il from C:\Users\ShilinX\.cache\babeldoc\working\demo2\input.pdf        high_level.py:829
+                    DEBUG    DEBUG:babeldoc.format.pdf.high_level:start detect scanned file                                                             high_level.py:850
+                    DEBUG    DEBUG:__main__:{'type': 'progress_start', 'stage': 'DetectScannedFile', 'stage_progress': 0.0, 'stage_current': 0,               main.py:535
+                             'stage_total': 4, 'overall_progress': 10.776980613646773, 'part_index': 1, 'total_parts': 1}                                                
+translate                                              ━━━━╺━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  10/100 0:00:00 0:00:04
+Parse PDF and Create Intermediate Representation (1/1) ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4/4     0:00:00 0:00:00
+DetectScannedFile (1/1)                                ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 0/4     0:00:00 -:--:--MuPDF error: format error: cmsOpenProfileFromMem f
+                    DEBUG    DEBUG:__main__:{'type': 'progress_update', 'stage': 'DetectScannedFile', 'stage_progress': 25.0, 'stage_current': 1,             main.py:535
+                             'stage_total': 4, 'overall_progress': 11.24446649366509, 'part_index': 1, 'total_parts': 1}                                                 
+                    DEBUG    DEBUG:__main__:{'type': 'progress_end', 'stage': 'DetectScannedFile', 'stage_progress': 100.0, 'stage_current': 4,               main.py:535
+                             'stage_total': 4, 'overall_progress': 12.646924133720043, 'part_index': 1, 'total_parts': 1}                                                
+                    DEBUG    DEBUG:babeldoc.format.pdf.high_level:finish detect scanned file                                                            high_level.py:852
+                    DEBUG    DEBUG:babeldoc.format.pdf.high_level:start generating layouts                                                              high_level.py:860
+                    DEBUG    DEBUG:__main__:{'type': 'progress_start', 'stage': 'Parse Page Layout', 'stage_progress': 0.0, 'stage_current': 0,               main.py:535
+                             'stage_total': 4, 'overall_progress': 12.646924133720043, 'part_index': 1, 'total_parts': 1}                                                
+translate                                              ━━━━━╺━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  12/100 0:00:00 0:00:05                                                  
+Parse PDF and Create Intermediate Representation (1/1) ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4/4     0:00:00 0:00:00
+translate                                              ━━━━━╺━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  12/100 0:00:00 0:00:05                                                  
+[08/01/25 13:56:30] DEBUG    DEBUG:__main__:{'type': 'progress_update', 'stage': 'Parse Page Layout', 'stage_progress': 25.0, 'stage_current': 1,             main.py:535
+                             'stage_total': 4, 'overall_progress': 15.323996336437187, 'part_index': 1, 'total_parts': 1}                                                
+[08/01/25 13:56:31] DEBUG    DEBUG:__main__:{'type': 'progress_update', 'stage': 'Parse Page Layout', 'stage_progress': 50.0, 'stage_current': 2,             main.py:535
+                             'stage_total': 4, 'overall_progress': 18.00106853915433, 'part_index': 1, 'total_parts': 1}                                                 
+[08/01/25 13:56:32] DEBUG    DEBUG:__main__:{'type': 'progress_update', 'stage': 'Parse Page Layout', 'stage_progress': 75.0, 'stage_current': 3,             main.py:535
+                             'stage_total': 4, 'overall_progress': 20.67814074187147, 'part_index': 1, 'total_parts': 1}                                                 
+[08/01/25 13:56:33] DEBUG    DEBUG:__main__:{'type': 'progress_update', 'stage': 'Parse Page Layout', 'stage_progress': 100.0, 'stage_current': 4,            main.py:535
+                             'stage_total': 4, 'overall_progress': 23.355212944588615, 'part_index': 1, 'total_parts': 1}                                                
+                    DEBUG    DEBUG:__main__:{'type': 'progress_end', 'stage': 'Parse Page Layout', 'stage_progress': 100.0, 'stage_current': 4,               main.py:535
+                             'stage_total': 4, 'overall_progress': 23.355212944588615, 'part_index': 1, 'total_parts': 1}                                                
+                    DEBUG    DEBUG:babeldoc.format.pdf.high_level:finish generating layouts                                                             high_level.py:862
+                    DEBUG    DEBUG:__main__:{'type': 'progress_start', 'stage': 'Parse Table', 'stage_progress': 0.0, 'stage_current': 0, 'stage_total': 4,   main.py:535
+                             'overall_progress': 23.355212944588615, 'part_index': 1, 'total_parts': 1}                                                                  
+                    DEBUG    DEBUG:__main__:{'type': 'progress_update', 'stage': 'Parse Table', 'stage_progress': 25.0, 'stage_current': 1, 'stage_total': 4, main.py:535
+                             'overall_progress': 23.5460235078614, 'part_index': 1, 'total_parts': 1}                                                                    
+[08/01/25 13:56:34] DEBUG    DEBUG:__main__:{'type': 'progress_update', 'stage': 'Parse Table', 'stage_progress': 50.0, 'stage_current': 2, 'stage_total': 4, main.py:535
+                             'overall_progress': 23.73683407113418, 'part_index': 1, 'total_parts': 1}                                                                   
+                    DEBUG    DEBUG:__main__:{'type': 'progress_update', 'stage': 'Parse Table', 'stage_progress': 75.0, 'stage_current': 3, 'stage_total': 4, main.py:535
+                             'overall_progress': 23.927644634406963, 'part_index': 1, 'total_parts': 1}                                                                  
+                    DEBUG    DEBUG:__main__:{'type': 'progress_update', 'stage': 'Parse Table', 'stage_progress': 100.0, 'stage_current': 4, 'stage_total':   main.py:535
+                             4, 'overall_progress': 24.118455197679747, 'part_index': 1, 'total_parts': 1}                                                               
+                    DEBUG    DEBUG:__main__:{'type': 'progress_end', 'stage': 'Parse Table', 'stage_progress': 100.0, 'stage_current': 4, 'stage_total': 4,   main.py:535
+                             'overall_progress': 24.118455197679747, 'part_index': 1, 'total_parts': 1}                                                                  
+                    DEBUG    DEBUG:babeldoc.format.pdf.high_level:finish table parser                                                                   high_level.py:871
+[08/01/25 13:56:35] DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+[08/01/25 13:56:36] DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+[08/01/25 13:56:37] DEBUG    DEBUG:__main__:{'type': 'progress_start', 'stage': 'Parse Paragraphs', 'stage_progress': 0.0, 'stage_current': 0, 'stage_total': main.py:535
+                             4, 'overall_progress': 24.118455197679747, 'part_index': 1, 'total_parts': 1}                                                               
+                    DEBUG    DEBUG:__main__:{'type': 'progress_update', 'stage': 'Parse Paragraphs', 'stage_progress': 25.0, 'stage_current': 1,              main.py:535
+                             'stage_total': 4, 'overall_progress': 25.312929323767367, 'part_index': 1, 'total_parts': 1}                                                
+                    DEBUG    DEBUG:__main__:{'type': 'progress_update', 'stage': 'Parse Paragraphs', 'stage_progress': 50.0, 'stage_current': 2,              main.py:535
+                             'stage_total': 4, 'overall_progress': 26.507403449854987, 'part_index': 1, 'total_parts': 1}                                                
+[08/01/25 13:56:38] DEBUG    DEBUG:__main__:{'type': 'progress_update', 'stage': 'Parse Paragraphs', 'stage_progress': 75.0, 'stage_current': 3,              main.py:535
+                             'stage_total': 4, 'overall_progress': 27.701877575942607, 'part_index': 1, 'total_parts': 1}                                                
+                    DEBUG    DEBUG:__main__:{'type': 'progress_update', 'stage': 'Parse Paragraphs', 'stage_progress': 100.0, 'stage_current': 4,             main.py:535
+                             'stage_total': 4, 'overall_progress': 28.896351702030227, 'part_index': 1, 'total_parts': 1}                                                
+                    DEBUG    DEBUG:__main__:{'type': 'progress_end', 'stage': 'Parse Paragraphs', 'stage_progress': 100.0, 'stage_current': 4, 'stage_total': main.py:535
+                             4, 'overall_progress': 28.896351702030227, 'part_index': 1, 'total_parts': 1}                                                               
+                    DEBUG    DEBUG:babeldoc.format.pdf.high_level:finish paragraph finder from C:\Users\ShilinX\.cache\babeldoc\working\demo2\input.pdf high_level.py:878
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+[08/01/25 13:56:39] DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+[08/01/25 13:56:40] DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:__main__:{'type': 'progress_start', 'stage': 'Parse Formulas and Styles', 'stage_progress': 0.0, 'stage_current': 0,       main.py:535
+                             'stage_total': 4, 'overall_progress': 28.896351702030227, 'part_index': 1, 'total_parts': 1}                                                
+                    DEBUG    DEBUG:__main__:{'type': 'progress_update', 'stage': 'Parse Formulas and Styles', 'stage_progress': 25.0, 'stage_current': 1,     main.py:535
+                             'stage_total': 4, 'overall_progress': 29.213097237063046, 'part_index': 1, 'total_parts': 1}                                                
+                    DEBUG    DEBUG:__main__:{'type': 'progress_update', 'stage': 'Parse Formulas and Styles', 'stage_progress': 100.0, 'stage_current': 4,    main.py:535
+                             'stage_total': 4, 'overall_progress': 30.163333842161506, 'part_index': 1, 'total_parts': 1}                                                
+                    DEBUG    DEBUG:babeldoc.format.pdf.high_level:finish styles and formulas from                                                       high_level.py:885
+                             C:\Users\ShilinX\.cache\babeldoc\working\demo2\input.pdf                                                                                    
+                    DEBUG    DEBUG:__main__:{'type': 'progress_end', 'stage': 'Parse Formulas and Styles', 'stage_progress': 100.0, 'stage_current': 4,       main.py:535
+                             'stage_total': 4, 'overall_progress': 30.163333842161506, 'part_index': 1, 'total_parts': 1}                                                
+[08/01/25 13:56:41] INFO     INFO:babeldoc.format.pdf.document_il.midend.automatic_term_extractor:Automatic Term Extraction: Starting     automatic_term_extractor.py:263
+                             term extraction for document.                                                                                                               
+                    DEBUG    DEBUG:__main__:{'type': 'progress_start', 'stage': 'Automatic Term Extraction', 'stage_progress': 0.0, 'stage_current': 0,       main.py:535
+                             'stage_total': 487, 'overall_progress': 30.163333842161506, 'part_index': 1, 'total_parts': 1}                                              
+                    DEBUG    DEBUG:__main__:{'type': 'progress_update', 'stage': 'Automatic Term Extraction', 'stage_progress': 0.2053388090349076,           main.py:535
+                             'stage_current': 1, 'stage_total': 487, 'overall_progress': 30.21035081873796, 'part_index': 1, 'total_parts': 1}                           
+                    DEBUG    DEBUG:babeldoc.utils.priority_thread_pool_executor:Shutting down executor ThreadPoolExecutor-0          priority_thread_pool_executor.py:230
+                    DEBUG    DEBUG:babeldoc.utils.priority_thread_pool_executor:Waiting for all tasks done ThreadPoolExecutor-0      priority_thread_pool_executor.py:232
+[08/01/25 13:56:56] DEBUG    DEBUG:__main__:{'type': 'progress_update', 'stage': 'Automatic Term Extraction', 'stage_progress': 69.81519507186859,            main.py:535
+                             'stage_current': 340, 'stage_total': 487, 'overall_progress': 46.149105878156455, 'part_index': 1, 'total_parts': 1}                        
+[08/01/25 13:57:05] DEBUG    DEBUG:__main__:{'type': 'progress_update', 'stage': 'Automatic Term Extraction', 'stage_progress': 72.48459958932239,            main.py:535
+                             'stage_current': 353, 'stage_total': 487, 'overall_progress': 46.760326573650374, 'part_index': 1, 'total_parts': 1}                        
+[08/01/25 13:57:07] DEBUG    DEBUG:__main__:{'type': 'progress_update', 'stage': 'Automatic Term Extraction', 'stage_progress': 75.15400410677618,            main.py:535
+                             'stage_current': 366, 'stage_total': 487, 'overall_progress': 47.3715472691443, 'part_index': 1, 'total_parts': 1}                          
+[08/01/25 13:57:11] DEBUG    DEBUG:__main__:{'type': 'progress_update', 'stage': 'Automatic Term Extraction', 'stage_progress': 77.82340862422998,            main.py:535
+                             'stage_current': 379, 'stage_total': 487, 'overall_progress': 47.98276796463823, 'part_index': 1, 'total_parts': 1}                         
+[08/01/25 13:57:21] DEBUG    DEBUG:__main__:{'type': 'progress_update', 'stage': 'Automatic Term Extraction', 'stage_progress': 80.49281314168378,            main.py:535
+                             'stage_current': 392, 'stage_total': 487, 'overall_progress': 48.59398866013215, 'part_index': 1, 'total_parts': 1}                         
+[08/01/25 13:57:33] DEBUG    DEBUG:__main__:{'type': 'progress_update', 'stage': 'Automatic Term Extraction', 'stage_progress': 83.16221765913758,            main.py:535
+                             'stage_current': 405, 'stage_total': 487, 'overall_progress': 49.205209355626074, 'part_index': 1, 'total_parts': 1}                        
+[08/01/25 13:57:40] DEBUG    DEBUG:__main__:{'type': 'progress_update', 'stage': 'Automatic Term Extraction', 'stage_progress': 85.83162217659138,            main.py:535
+                             'stage_current': 418, 'stage_total': 487, 'overall_progress': 49.81643005112, 'part_index': 1, 'total_parts': 1}                            
+[08/01/25 13:57:44] DEBUG    DEBUG:__main__:{'type': 'progress_update', 'stage': 'Automatic Term Extraction', 'stage_progress': 88.50102669404518,            main.py:535
+                             'stage_current': 431, 'stage_total': 487, 'overall_progress': 50.42765074661392, 'part_index': 1, 'total_parts': 1}                         
+[08/01/25 13:57:48] DEBUG    DEBUG:__main__:{'type': 'progress_update', 'stage': 'Automatic Term Extraction', 'stage_progress': 89.73305954825462,            main.py:535
+                             'stage_current': 437, 'stage_total': 487, 'overall_progress': 50.709752606072655, 'part_index': 1, 'total_parts': 1}                        
+[08/01/25 13:57:51] DEBUG    DEBUG:__main__:{'type': 'progress_update', 'stage': 'Automatic Term Extraction', 'stage_progress': 92.40246406570841,            main.py:535
+                             'stage_current': 450, 'stage_total': 487, 'overall_progress': 51.32097330156658, 'part_index': 1, 'total_parts': 1}                         
+[08/01/25 13:57:54] DEBUG    DEBUG:__main__:{'type': 'progress_update', 'stage': 'Automatic Term Extraction', 'stage_progress': 95.07186858316221,            main.py:535
+                             'stage_current': 463, 'stage_total': 487, 'overall_progress': 51.93219399706051, 'part_index': 1, 'total_parts': 1}                         
+[08/01/25 13:57:56] DEBUG    DEBUG:__main__:{'type': 'progress_update', 'stage': 'Automatic Term Extraction', 'stage_progress': 97.74127310061601,            main.py:535
+                             'stage_current': 476, 'stage_total': 487, 'overall_progress': 52.54341469255443, 'part_index': 1, 'total_parts': 1}                         
+[08/01/25 13:57:58] DEBUG    DEBUG:__main__:{'type': 'progress_update', 'stage': 'Automatic Term Extraction', 'stage_progress': 100.0, 'stage_current': 487,  main.py:535
+                             'stage_total': 487, 'overall_progress': 53.060601434895446, 'part_index': 1, 'total_parts': 1}                                              
+                    DEBUG    DEBUG:babeldoc.utils.priority_thread_pool_executor:All tasks done ThreadPoolExecutor-0                  priority_thread_pool_executor.py:236
+                    DEBUG    DEBUG:babeldoc.utils.priority_thread_pool_executor:Waiting for all thread done ThreadPoolExecutor-0     priority_thread_pool_executor.py:255
+                    DEBUG    DEBUG:babeldoc.utils.priority_thread_pool_executor:shutdown finish ThreadPoolExecutor-0                 priority_thread_pool_executor.py:261
+                    DEBUG    DEBUG:__main__:{'type': 'progress_end', 'stage': 'Automatic Term Extraction', 'stage_progress': 100.0, 'stage_current': 487,     main.py:535
+                             'stage_total': 487, 'overall_progress': 53.060601434895446, 'part_index': 1, 'total_parts': 1}                                              
+                    DEBUG    DEBUG:babeldoc.glossary:start build regex for glossary auto_extracted_glossary with 126 entries                               glossary.py:69
+                    DEBUG    DEBUG:babeldoc.glossary:building hs_db chunk 1 / 1                                                                            glossary.py:97
+                    DEBUG    DEBUG:babeldoc.glossary:finished building regex for glossary auto_extracted_glossary in 0.00 seconds                         glossary.py:114
+                    DEBUG    DEBUG:babeldoc.glossary:build hs database for glossary auto_extracted_glossary with 126 entries, hs_info: b'Version: 5.4.2   glossary.py:117
+                             Features:  Mode: BLOCK'                                                                                                                     
+                    DEBUG    DEBUG:babeldoc.format.pdf.document_il.midend.automatic_term_extractor:save translate tracking to             automatic_term_extractor.py:282
+                             C:\Users\ShilinX\.cache\babeldoc\working\demo2\term_extractor_tracking.json                                                                 
+                    DEBUG    DEBUG:babeldoc.format.pdf.document_il.midend.automatic_term_extractor:save term frequency to                 automatic_term_extractor.py:289
+                             C:\Users\ShilinX\.cache\babeldoc\working\demo2\term_extractor_freq.json                                                                     
+                    DEBUG    DEBUG:babeldoc.format.pdf.document_il.midend.automatic_term_extractor:save auto extracted glossary to        automatic_term_extractor.py:301
+                             C:\Users\ShilinX\.cache\babeldoc\working\demo2\auto_extractor_glossary.csv                                                                  
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+[08/01/25 13:57:59] DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+[08/01/25 13:58:00] DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+[08/01/25 13:58:01] DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    INFO     INFO:babeldoc.format.pdf.document_il.midend.il_translator_llm_only:Found title paragraph: Sulbactam Sodium      il_translator_llm_only.py:95
+                    INFO     INFO:babeldoc.format.pdf.document_il.midend.il_translator_llm_only:Found first title paragraph: Sulbactam      il_translator_llm_only.py:112
+                             Sodium                                                                                                                                      
+                    DEBUG    DEBUG:__main__:{'type': 'progress_start', 'stage': 'Translate Paragraphs', 'stage_progress': 0.0, 'stage_current': 0,            main.py:535
+                             'stage_total': 160, 'overall_progress': 53.060601434895446, 'part_index': 1, 'total_parts': 1}                                              
+                    DEBUG    DEBUG:__main__:{'type': 'progress_update', 'stage': 'Translate Paragraphs', 'stage_progress': 0.625, 'stage_current': 1,         main.py:535
+                             'stage_total': 160, 'overall_progress': 53.284613036177696, 'part_index': 1, 'total_parts': 1}                                              
+                    DEBUG    DEBUG:babeldoc.utils.priority_thread_pool_executor:Shutting down executor ThreadPoolExecutor-2          priority_thread_pool_executor.py:230
+                    DEBUG    DEBUG:babeldoc.utils.priority_thread_pool_executor:Waiting for all tasks done ThreadPoolExecutor-2      priority_thread_pool_executor.py:232
+[08/01/25 13:58:08] DEBUG    DEBUG:__main__:{'type': 'progress_update', 'stage': 'Translate Paragraphs', 'stage_progress': 6.875, 'stage_current': 11,        main.py:535
+                             'stage_total': 160, 'overall_progress': 55.524729049000165, 'part_index': 1, 'total_parts': 1}                                              
+[08/01/25 13:58:15] DEBUG    DEBUG:__main__:{'type': 'progress_update', 'stage': 'Translate Paragraphs', 'stage_progress': 10.0, 'stage_current': 16,         main.py:535
+                             'stage_total': 160, 'overall_progress': 56.6447870554114, 'part_index': 1, 'total_parts': 1}                                                
+                    WARNING  WARNING:babeldoc.format.pdf.document_il.midend.il_translator:Too many placeholders (41) in paragraph[jZwYn], disabling  il_translator.py:514                             rich text translation for this paragraph                                                                                                    
+[08/01/25 13:58:17] DEBUG    DEBUG:__main__:{'type': 'progress_update', 'stage': 'Translate Paragraphs', 'stage_progress': 13.75, 'stage_current': 22,        main.py:535                             'stage_total': 160, 'overall_progress': 57.98885666310488, 'part_index': 1, 'total_parts': 1}                                               
+[08/01/25 13:58:24] DEBUG    DEBUG:__main__:{'type': 'progress_update', 'stage': 'Translate Paragraphs', 'stage_progress': 17.5, 'stage_current': 28,         main.py:535                             'stage_total': 160, 'overall_progress': 59.33292627079836, 'part_index': 1, 'total_parts': 1}                                               
+[08/01/25 13:58:31] DEBUG    DEBUG:__main__:{'type': 'progress_update', 'stage': 'Translate Paragraphs', 'stage_progress': 21.25, 'stage_current': 34,        main.py:535
+                             'stage_total': 160, 'overall_progress': 60.676995878491844, 'part_index': 1, 'total_parts': 1}                                              
+[08/01/25 13:58:37] DEBUG    DEBUG:__main__:{'type': 'progress_update', 'stage': 'Translate Paragraphs', 'stage_progress': 23.125, 'stage_current': 37,       main.py:535
+                             'stage_total': 160, 'overall_progress': 61.34903068233859, 'part_index': 1, 'total_parts': 1}                                               
+[08/01/25 13:58:47] DEBUG    DEBUG:__main__:{'type': 'progress_update', 'stage': 'Translate Paragraphs', 'stage_progress': 26.875, 'stage_current': 43,       main.py:535
+                             'stage_total': 160, 'overall_progress': 62.69310029003206, 'part_index': 1, 'total_parts': 1}                                               
+                    DEBUG    DEBUG:babeldoc.format.pdf.document_il.midend.il_translator:Failed to match all placeholder for <style id='1'>r          il_translator.py:605
+                             </style>{v3}<style id='4'>peak response from the </style><style id='6'>Sample solution r </style>{v8}<style id='9'>peak                     
+                             response from the </style><style id='11'>Standard solution C </style>{v13}<style id='14'>concentration of                                   
+                             </style><style id='16'>USP Sulbactam RS</style><style id='18'> in the </style><style id='20'>Standard                                       
+                             solution</style><style id='22'> (mg/mL)</style><style id='24'>C </style>{v26}<style id='27'>concentration of Sulbactam                      
+                             Sodium in the </style><style id='29'>Sample solution</style><style id='31'> (mg/mL)</style><style id='33'>P                                 
+                             </style>{v35}<style id='36'>potency of sulbactam in </style><style id='38'>USP Sulbactam RS</style><style id='40'>                          
+                             (mg/mg)</style><style id='42'>F </style>{v44}<style id='45'>conversion factor, 1000 μg/mg</style>                                           
+[08/01/25 13:58:52] DEBUG    DEBUG:__main__:{'type': 'progress_update', 'stage': 'Translate Paragraphs', 'stage_progress': 28.75, 'stage_current': 46,        main.py:535
+                             'stage_total': 160, 'overall_progress': 63.365135093878806, 'part_index': 1, 'total_parts': 1}                                              
+[08/01/25 13:59:00] DEBUG    DEBUG:babeldoc.format.pdf.document_il.midend.il_translator:Failed to match all placeholder for {v1}<style               il_translator.py:605
+                             id='2'>B</style><style id='4'>ACTERIAL</style><style id='6'> E</style><style id='8'>NDOTOXINS</style><style id='10'>                        
+                             T</style><style id='12'>EST</style><style id='14'> </style><style id='16'>〈</style><style id='18'>85</style><style                         
+                             id='20'>〉</style><style id='22'>: </style><style id='24'>Where the label states that Sulbactam Sodium is sterile or                        
+                             must be subjected to further processing during the</style><style id='26'>▲</style><style id='28'>preparation of                             
+                             injectable dosage forms, the level of bacterial endotoxins is such that the requirement under the relevant dosage form                      
+                             monograph(s) in which Sulbactam Sodium is used can be met.</style><style id='30'>▲</style> (USP 1-Dec-2023)                                 
+                    DEBUG    DEBUG:__main__:{'type': 'progress_update', 'stage': 'Translate Paragraphs', 'stage_progress': 32.5, 'stage_current': 52,         main.py:535                             'stage_total': 160, 'overall_progress': 64.70920470157229, 'part_index': 1, 'total_parts': 1}                                               
+[08/01/25 13:59:06] DEBUG    DEBUG:__main__:{'type': 'progress_update', 'stage': 'Translate Paragraphs', 'stage_progress': 36.25, 'stage_current': 58,        main.py:535
+                             'stage_total': 160, 'overall_progress': 66.05327430926577, 'part_index': 1, 'total_parts': 1}                                               
+[08/01/25 13:59:11] DEBUG    DEBUG:__main__:{'type': 'progress_update', 'stage': 'Translate Paragraphs', 'stage_progress': 40.0, 'stage_current': 64,         main.py:535
+                             'stage_total': 160, 'overall_progress': 67.39734391695926, 'part_index': 1, 'total_parts': 1}                                               
+[08/01/25 13:59:15] DEBUG    DEBUG:__main__:{'type': 'progress_update', 'stage': 'Translate Paragraphs', 'stage_progress': 43.75, 'stage_current': 70,        main.py:535
+                             'stage_total': 160, 'overall_progress': 68.74141352465274, 'part_index': 1, 'total_parts': 1}                                               
+                    WARNING  WARNING:babeldoc.format.pdf.document_il.midend.il_translator_llm_only:Translation result is the same as input, il_translator_llm_only.py:498
+                             fallback.                                                                                                                                   
+                    WARNING  WARNING:babeldoc.format.pdf.document_il.midend.il_translator_llm_only:Fallback to simple translation.          il_translator_llm_only.py:543
+                             paragraph id: 7G67Z                                                                                                                         
+                    WARNING  WARNING:babeldoc.format.pdf.document_il.midend.il_translator_llm_only:Translation result is the same as input, il_translator_llm_only.py:498
+                             fallback.                                                                                                                                   
+                    WARNING  WARNING:babeldoc.format.pdf.document_il.midend.il_translator_llm_only:Fallback to simple translation.          il_translator_llm_only.py:543
+                             paragraph id: fFCMZ                                                                                                                         
+[08/01/25 13:59:18] DEBUG    DEBUG:__main__:{'type': 'progress_update', 'stage': 'Translate Paragraphs', 'stage_progress': 45.0, 'stage_current': 72,         main.py:535
+                             'stage_total': 160, 'overall_progress': 69.18943672721724, 'part_index': 1, 'total_parts': 1}                                               
+[08/01/25 13:59:21] DEBUG    DEBUG:__main__:{'type': 'progress_update', 'stage': 'Translate Paragraphs', 'stage_progress': 48.75, 'stage_current': 78,        main.py:535
+                             'stage_total': 160, 'overall_progress': 70.53350633491071, 'part_index': 1, 'total_parts': 1}                                               
+                    WARNING  WARNING:babeldoc.format.pdf.document_il.midend.il_translator_llm_only:Translation result edit distance is too  il_translator_llm_only.py:517
+                             small. distance: 4, input: <style id='1'>▲ </style>{v3}acid<style id='4'>▲</style>, output: <style id='1'>▲                                 
+                             </style>{v3}酸<style id='4'>▲</style>                                                                                                       
+                    WARNING  WARNING:babeldoc.format.pdf.document_il.midend.il_translator_llm_only:Fallback to simple translation.          il_translator_llm_only.py:543
+                             paragraph id: m1ey2                                                                                                                         
+[08/01/25 13:59:25] DEBUG    DEBUG:__main__:{'type': 'progress_update', 'stage': 'Translate Paragraphs', 'stage_progress': 51.875, 'stage_current': 83,       main.py:535
+                             'stage_total': 160, 'overall_progress': 71.65356434132195, 'part_index': 1, 'total_parts': 1}                                               
+[08/01/25 13:59:26] DEBUG    DEBUG:__main__:{'type': 'progress_update', 'stage': 'Translate Paragraphs', 'stage_progress': 55.625, 'stage_current': 89,       main.py:535
+                             'stage_total': 160, 'overall_progress': 72.99763394901544, 'part_index': 1, 'total_parts': 1}                                               
+[08/01/25 13:59:28] DEBUG    DEBUG:__main__:{'type': 'progress_update', 'stage': 'Translate Paragraphs', 'stage_progress': 56.25, 'stage_current': 90,        main.py:535
+                             'stage_total': 160, 'overall_progress': 73.22164555029768, 'part_index': 1, 'total_parts': 1}                                               
+[08/01/25 13:59:31] DEBUG    DEBUG:__main__:{'type': 'progress_update', 'stage': 'Translate Paragraphs', 'stage_progress': 56.875, 'stage_current': 91,       main.py:535
+                             'stage_total': 160, 'overall_progress': 73.44565715157992, 'part_index': 1, 'total_parts': 1}                                               
+                    WARNING  WARNING:babeldoc.format.pdf.document_il.midend.il_translator_llm_only:Translation result is the same as input, il_translator_llm_only.py:498
+                             fallback.                                                                                                                                   
+                    WARNING  WARNING:babeldoc.format.pdf.document_il.midend.il_translator_llm_only:Fallback to simple translation.          il_translator_llm_only.py:543
+                             paragraph id: xxdwo                                                                                                                         
+[08/01/25 13:59:34] DEBUG    DEBUG:__main__:{'type': 'progress_update', 'stage': 'Translate Paragraphs', 'stage_progress': 60.0, 'stage_current': 96,         main.py:535
+                             'stage_total': 160, 'overall_progress': 74.56571515799116, 'part_index': 1, 'total_parts': 1}                                               
+                    WARNING  WARNING:babeldoc.format.pdf.document_il.midend.il_translator_llm_only:Translation result is the same as input, il_translator_llm_only.py:498
+                             fallback.                                                                                                                                   
+                    WARNING  WARNING:babeldoc.format.pdf.document_il.midend.il_translator_llm_only:Fallback to simple translation.          il_translator_llm_only.py:543
+                             paragraph id: qJ8Gs                                                                                                                         
+[08/01/25 13:59:36] DEBUG    DEBUG:__main__:{'type': 'progress_update', 'stage': 'Translate Paragraphs', 'stage_progress': 61.875, 'stage_current': 99,       main.py:535
+                             'stage_total': 160, 'overall_progress': 75.23774996183789, 'part_index': 1, 'total_parts': 1}                                               
+[08/01/25 13:59:38] DEBUG    DEBUG:__main__:{'type': 'progress_update', 'stage': 'Translate Paragraphs', 'stage_progress': 62.5, 'stage_current': 100,        main.py:535
+                             'stage_total': 160, 'overall_progress': 75.46176156312015, 'part_index': 1, 'total_parts': 1}                                               
+                    WARNING  WARNING:babeldoc.format.pdf.document_il.midend.il_translator_llm_only:Translation result is the same as input, il_translator_llm_only.py:498
+                             fallback.                                                                                                                                   
+                    WARNING  WARNING:babeldoc.format.pdf.document_il.midend.il_translator_llm_only:Fallback to simple translation.          il_translator_llm_only.py:543
+                             paragraph id: uT2q1                                                                                                                         
+[08/01/25 13:59:41] DEBUG    DEBUG:__main__:{'type': 'progress_update', 'stage': 'Translate Paragraphs', 'stage_progress': 64.375, 'stage_current': 103,      main.py:535
+                             'stage_total': 160, 'overall_progress': 76.13379636696689, 'part_index': 1, 'total_parts': 1}                                               
+[08/01/25 13:59:43] DEBUG    DEBUG:__main__:{'type': 'progress_update', 'stage': 'Translate Paragraphs', 'stage_progress': 68.125, 'stage_current': 109,      main.py:535
+                             'stage_total': 160, 'overall_progress': 77.47786597466038, 'part_index': 1, 'total_parts': 1}                                               
+[08/01/25 13:59:57] WARNING  WARNING:babeldoc.format.pdf.document_il.midend.il_translator_llm_only:Translation result is the same as input, il_translator_llm_only.py:498
+                             fallback.                                                                                                                                   
+                    WARNING  WARNING:babeldoc.format.pdf.document_il.midend.il_translator_llm_only:Fallback to simple translation.          il_translator_llm_only.py:543
+                             paragraph id: uzxC2                                                                                                                         
+                    DEBUG    DEBUG:__main__:{'type': 'progress_update', 'stage': 'Translate Paragraphs', 'stage_progress': 68.75, 'stage_current': 110,       main.py:535
+                             'stage_total': 160, 'overall_progress': 77.70187757594262, 'part_index': 1, 'total_parts': 1}                                               
+[08/01/25 14:00:05] DEBUG    DEBUG:__main__:{'type': 'progress_update', 'stage': 'Translate Paragraphs', 'stage_progress': 71.875, 'stage_current': 115,      main.py:535
+                             'stage_total': 160, 'overall_progress': 78.82193558235386, 'part_index': 1, 'total_parts': 1}                                               
+[08/01/25 14:00:11] DEBUG    DEBUG:__main__:{'type': 'progress_update', 'stage': 'Translate Paragraphs', 'stage_progress': 75.625, 'stage_current': 121,      main.py:535
+                             'stage_total': 160, 'overall_progress': 80.16600519004734, 'part_index': 1, 'total_parts': 1}                                               
+[08/01/25 14:00:20] WARNING  WARNING:babeldoc.format.pdf.document_il.midend.il_translator_llm_only:Translation result is the same as input, il_translator_llm_only.py:498
+                             fallback.                                                                                                                                   
+                    WARNING  WARNING:babeldoc.format.pdf.document_il.midend.il_translator_llm_only:Fallback to simple translation.          il_translator_llm_only.py:543
+                             paragraph id: Z1i1e                                                                                                                         
+                    WARNING  WARNING:babeldoc.format.pdf.document_il.midend.il_translator_llm_only:Translation result is the same as input, il_translator_llm_only.py:498
+                             fallback.                                                                                                                                   
+                    WARNING  WARNING:babeldoc.format.pdf.document_il.midend.il_translator_llm_only:Fallback to simple translation.          il_translator_llm_only.py:543
+                             paragraph id: apQn4                                                                                                                         
+                    DEBUG    DEBUG:__main__:{'type': 'progress_update', 'stage': 'Translate Paragraphs', 'stage_progress': 76.25, 'stage_current': 122,       main.py:535
+                             'stage_total': 160, 'overall_progress': 80.39001679132957, 'part_index': 1, 'total_parts': 1}                                               
+[08/01/25 14:00:27] DEBUG    DEBUG:__main__:{'type': 'progress_update', 'stage': 'Translate Paragraphs', 'stage_progress': 78.75, 'stage_current': 126,       main.py:535
+                             'stage_total': 160, 'overall_progress': 81.28606319645857, 'part_index': 1, 'total_parts': 1}                                               
+[08/01/25 14:00:39] WARNING  WARNING:babeldoc.format.pdf.document_il.midend.il_translator_llm_only:Translation result is the same as input, il_translator_llm_only.py:498
+                             fallback.                                                                                                                                   
+                    WARNING  WARNING:babeldoc.format.pdf.document_il.midend.il_translator_llm_only:Fallback to simple translation.          il_translator_llm_only.py:543
+                             paragraph id: ggXNe                                                                                                                         
+                    DEBUG    DEBUG:__main__:{'type': 'progress_update', 'stage': 'Translate Paragraphs', 'stage_progress': 79.375, 'stage_current': 127,      main.py:535
+                             'stage_total': 160, 'overall_progress': 81.51007479774081, 'part_index': 1, 'total_parts': 1}                                               
+[08/01/25 14:00:46] DEBUG    DEBUG:__main__:{'type': 'progress_update', 'stage': 'Translate Paragraphs', 'stage_progress': 82.5, 'stage_current': 132,        main.py:535                             'stage_total': 160, 'overall_progress': 82.63013280415205, 'part_index': 1, 'total_parts': 1}                                               
+[08/01/25 14:00:54] DEBUG    DEBUG:__main__:{'type': 'progress_update', 'stage': 'Translate Paragraphs', 'stage_progress': 83.125, 'stage_current': 133,      main.py:535                             'stage_total': 160, 'overall_progress': 82.8541444054343, 'part_index': 1, 'total_parts': 1}                                                
+                    WARNING  WARNING:babeldoc.format.pdf.document_il.midend.il_translator_llm_only:Translation result is the same as input, il_translator_llm_only.py:498                             fallback.                                                                                                                                   
+                    WARNING  WARNING:babeldoc.format.pdf.document_il.midend.il_translator_llm_only:Fallback to simple translation.          il_translator_llm_only.py:543                             paragraph id: TWvrx                                                                                                                         
+[08/01/25 14:01:01] DEBUG    DEBUG:__main__:{'type': 'progress_update', 'stage': 'Translate Paragraphs', 'stage_progress': 86.25, 'stage_current': 138,       main.py:535[08/01/25 14:00:54] DEBUG    DEBUG:__main__:{'type': 'progress_update', 'stage': 'Translate Paragraphs', 'stage_progress': 83.125, 'stage_current': 133,      main.py:535                             'stage_total': 160, 'overall_progress': 82.8541444054343, 'part_index': 1, 'total_parts': 1}                                                
+                    WARNING  WARNING:babeldoc.format.pdf.document_il.midend.il_translator_llm_only:Translation result is the same as input, il_translator_llm_only.py:498                             fallback.                                                                                                                                   
+                    WARNING  WARNING:babeldoc.format.pdf.document_il.midend.il_translator_llm_only:Fallback to simple translation.          il_translator_llm_only.py:543                             paragraph id: TWvrx                                                                                                                         
+[08/01/25 14:01:01] DEBUG    DEBUG:__main__:{'type': 'progress_update', 'stage': 'Translate Paragraphs', 'stage_progress': 86.25, 'stage_current': 138,       main.py:535                             'stage_total': 160, 'overall_progress': 83.97420241184554, 'part_index': 1, 'total_parts': 1}                                               
+[08/01/25 14:01:09] DEBUG    DEBUG:__main__:{'type': 'progress_update', 'stage': 'Translate Paragraphs', 'stage_progress': 90.0, 'stage_current': 144,        main.py:535                             'stage_total': 160, 'overall_progress': 85.31827201953902, 'part_index': 1, 'total_parts': 1}                                               
+[08/01/25 14:01:16] DEBUG    DEBUG:__main__:{'type': 'progress_update', 'stage': 'Translate Paragraphs', 'stage_progress': 90.625, 'stage_current': 145,      main.py:535
+                             'stage_total': 160, 'overall_progress': 85.54228362082125, 'part_index': 1, 'total_parts': 1}                                               
+[08/01/25 14:01:32] DEBUG    DEBUG:__main__:{'type': 'progress_update', 'stage': 'Translate Paragraphs', 'stage_progress': 91.25, 'stage_current': 146,       main.py:535
+                             'stage_total': 160, 'overall_progress': 85.76629522210351, 'part_index': 1, 'total_parts': 1}                                               
+[08/01/25 14:01:39] DEBUG    DEBUG:__main__:{'type': 'progress_update', 'stage': 'Translate Paragraphs', 'stage_progress': 91.875, 'stage_current': 147,      main.py:535
+                             'stage_total': 160, 'overall_progress': 85.99030682338577, 'part_index': 1, 'total_parts': 1}                                               
+[08/01/25 14:01:46] DEBUG    DEBUG:__main__:{'type': 'progress_update', 'stage': 'Translate Paragraphs', 'stage_progress': 92.5, 'stage_current': 148,        main.py:535
+                             'stage_total': 160, 'overall_progress': 86.21431842466801, 'part_index': 1, 'total_parts': 1}                                               
+[08/01/25 14:01:54] DEBUG    DEBUG:__main__:{'type': 'progress_update', 'stage': 'Translate Paragraphs', 'stage_progress': 93.125, 'stage_current': 149,      main.py:535
+                             'stage_total': 160, 'overall_progress': 86.43833002595025, 'part_index': 1, 'total_parts': 1}                                               
+                    WARNING  WARNING:babeldoc.format.pdf.document_il.midend.il_translator_llm_only:Translation result is too long or too    il_translator_llm_only.py:507                             short. Input: 1, Output: 3                                                                                                                  
+                    WARNING  WARNING:babeldoc.format.pdf.document_il.midend.il_translator_llm_only:Fallback to simple translation.          il_translator_llm_only.py:543                             paragraph id: 3UtCL                                                                                                                         
+[08/01/25 14:02:02] DEBUG    DEBUG:__main__:{'type': 'progress_update', 'stage': 'Translate Paragraphs', 'stage_progress': 96.25, 'stage_current': 154,       main.py:535                             'stage_total': 160, 'overall_progress': 87.55838803236148, 'part_index': 1, 'total_parts': 1}                                               
+                    DEBUG    DEBUG:babeldoc.utils.priority_thread_pool_executor:All tasks done ThreadPoolExecutor-2                  priority_thread_pool_executor.py:236                    DEBUG    DEBUG:babeldoc.utils.priority_thread_pool_executor:Waiting for all thread done ThreadPoolExecutor-2     priority_thread_pool_executor.py:255                    DEBUG    DEBUG:babeldoc.utils.priority_thread_pool_executor:shutdown finish ThreadPoolExecutor-2                 priority_thread_pool_executor.py:261                    DEBUG    DEBUG:babeldoc.utils.priority_thread_pool_executor:Shutting down executor ThreadPoolExecutor-1          priority_thread_pool_executor.py:230                    DEBUG    DEBUG:babeldoc.utils.priority_thread_pool_executor:Waiting for all tasks done ThreadPoolExecutor-1      priority_thread_pool_executor.py:232
+[08/01/25 14:02:09] DEBUG    DEBUG:__main__:{'type': 'progress_update', 'stage': 'Translate Paragraphs', 'stage_progress': 100.0, 'stage_current': 160,       main.py:535
+                             'stage_total': 160, 'overall_progress': 88.90245764005496, 'part_index': 1, 'total_parts': 1}                                               
+                    DEBUG    DEBUG:babeldoc.utils.priority_thread_pool_executor:All tasks done ThreadPoolExecutor-1                  priority_thread_pool_executor.py:236
+                    DEBUG    DEBUG:babeldoc.utils.priority_thread_pool_executor:Waiting for all thread done ThreadPoolExecutor-1     priority_thread_pool_executor.py:255
+                    DEBUG    DEBUG:babeldoc.utils.priority_thread_pool_executor:shutdown finish ThreadPoolExecutor-1                 priority_thread_pool_executor.py:261
+                    DEBUG    DEBUG:babeldoc.format.pdf.document_il.midend.il_translator_llm_only:save translate tracking to                 il_translator_llm_only.py:149
+                             C:\Users\ShilinX\.cache\babeldoc\working\demo2\translate_tracking.json                                                                      
+                    DEBUG    DEBUG:__main__:{'type': 'progress_end', 'stage': 'Translate Paragraphs', 'stage_progress': 100.0, 'stage_current': 160,          main.py:535
+                             'stage_total': 160, 'overall_progress': 88.90245764005496, 'part_index': 1, 'total_parts': 1}                                               
+                    INFO     INFO:babeldoc.format.pdf.document_il.midend.il_translator_llm_only:Translation completed. Total: 150,          il_translator_llm_only.py:152
+                             Successful: 138, Fallback: 12                                                                                                               
+                    DEBUG    DEBUG:babeldoc.format.pdf.high_level:finish ILTranslator from C:\Users\ShilinX\.cache\babeldoc\working\demo2\input.pdf     high_level.py:912
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+[08/01/25 14:02:10] DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:__main__:{'type': 'progress_start', 'stage': 'Typesetting', 'stage_progress': 0.0, 'stage_current': 0, 'stage_total': 8,   main.py:535
+                             'overall_progress': 88.90245764005496, 'part_index': 1, 'total_parts': 1}                                                                   
+                    DEBUG    DEBUG:__main__:{'type': 'progress_update', 'stage': 'Typesetting', 'stage_progress': 12.5, 'stage_current': 1, 'stage_total': 8, main.py:535
+                             'overall_progress': 89.35181651656237, 'part_index': 1, 'total_parts': 1}                                                                   
+                    DEBUG    DEBUG:__main__:{'type': 'progress_update', 'stage': 'Typesetting', 'stage_progress': 37.5, 'stage_current': 3, 'stage_total': 8, main.py:535
+                             'overall_progress': 90.25053426957717, 'part_index': 1, 'total_parts': 1}                                                                   
+                    DEBUG    DEBUG:__main__:{'type': 'progress_update', 'stage': 'Typesetting', 'stage_progress': 62.5, 'stage_current': 5, 'stage_total': 8, main.py:535
+                             'overall_progress': 91.14925202259198, 'part_index': 1, 'total_parts': 1}                                                                   
+                    DEBUG    DEBUG:__main__:{'type': 'progress_update', 'stage': 'Typesetting', 'stage_progress': 100.0, 'stage_current': 8, 'stage_total':   main.py:535
+                             8, 'overall_progress': 92.49732865211419, 'part_index': 1, 'total_parts': 1}                                                                
+                    DEBUG    DEBUG:__main__:{'type': 'progress_end', 'stage': 'Typesetting', 'stage_progress': 100.0, 'stage_current': 8, 'stage_total': 8,   main.py:535
+                             'overall_progress': 92.49732865211419, 'part_index': 1, 'total_parts': 1}                                                                   
+                    DEBUG    DEBUG:babeldoc.format.pdf.high_level:finish typsetting from C:\Users\ShilinX\.cache\babeldoc\working\demo2\input.pdf       high_level.py:943
+[08/01/25 14:02:11] DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+[08/01/25 14:02:12] DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:asyncio:Using proactor: IocpProactor                                                                            proactor_events.py:630
+                    DEBUG    DEBUG:__main__:{'type': 'progress_start', 'stage': 'Add Fonts', 'stage_progress': 0.0, 'stage_current': 0, 'stage_total': 1320,  main.py:535
+                             'overall_progress': 92.49732865211419, 'part_index': 1, 'total_parts': 1}                                                                   
+                    DEBUG    DEBUG:__main__:{'type': 'progress_update', 'stage': 'Add Fonts', 'stage_progress': 0.07575757575757576, 'stage_current': 1,      main.py:535
+                             'stage_total': 1320, 'overall_progress': 92.49768136254933, 'part_index': 1, 'total_parts': 1}                                              
+                    DEBUG    DEBUG:__main__:{'type': 'progress_update', 'stage': 'Add Fonts', 'stage_progress': 57.878787878787875, 'stage_current': 764,     main.py:535
+                             'stage_total': 1320, 'overall_progress': 92.76679942456161, 'part_index': 1, 'total_parts': 1}                                              
+                    DEBUG    DEBUG:__main__:{'type': 'progress_end', 'stage': 'Add Fonts', 'stage_progress': 100.0, 'stage_current': 1320, 'stage_total':     main.py:535
+                             1320, 'overall_progress': 92.96290642649979, 'part_index': 1, 'total_parts': 1}                                                             
+                    DEBUG    DEBUG:__main__:{'type': 'progress_start', 'stage': 'Generate drawing instructions', 'stage_progress': 0.0, 'stage_current': 0,   main.py:535
+                             'stage_total': 4, 'overall_progress': 92.96290642649979, 'part_index': 1, 'total_parts': 1}                                                 
+                    DEBUG    DEBUG:__main__:{'type': 'progress_update', 'stage': 'Generate drawing instructions', 'stage_progress': 25.0, 'stage_current': 1, main.py:535
+                             'stage_total': 4, 'overall_progress': 93.33689513051443, 'part_index': 1, 'total_parts': 1}                                                 
+                    DEBUG    DEBUG:__main__:{'type': 'progress_update', 'stage': 'Generate drawing instructions', 'stage_progress': 75.0, 'stage_current': 3, main.py:535
+                             'stage_total': 4, 'overall_progress': 94.08487253854375, 'part_index': 1, 'total_parts': 1}                                                 
+[08/01/25 14:02:13] DEBUG    DEBUG:__main__:{'type': 'progress_update', 'stage': 'Generate drawing instructions', 'stage_progress': 100.0, 'stage_current':   main.py:535
+                             4, 'stage_total': 4, 'overall_progress': 94.4588612425584, 'part_index': 1, 'total_parts': 1}                                               
+                    DEBUG    DEBUG:__main__:{'type': 'progress_end', 'stage': 'Generate drawing instructions', 'stage_progress': 100.0, 'stage_current': 4,   main.py:535
+                             'stage_total': 4, 'overall_progress': 94.4588612425584, 'part_index': 1, 'total_parts': 1}                                                  
+                    DEBUG    DEBUG:__main__:{'type': 'progress_start', 'stage': 'Subset font', 'stage_progress': 0.0, 'stage_current': 0, 'stage_total': 1,   main.py:535
+                             'overall_progress': 94.4588612425584, 'part_index': 1, 'total_parts': 1}                                                                    
+[08/01/25 14:02:14] INFO     INFO:babeldoc.format.pdf.document_il.backend.pdf_creater:Font subsetting completed successfully                           pdf_creater.py:639
+                    DEBUG    DEBUG:__main__:{'type': 'progress_update', 'stage': 'Subset font', 'stage_progress': 100.0, 'stage_current': 1, 'stage_total':   main.py:535
+                             1, 'overall_progress': 95.16104411540223, 'part_index': 1, 'total_parts': 1}                                                                
+                    DEBUG    DEBUG:__main__:{'type': 'progress_update', 'stage': 'Subset font', 'stage_progress': 100.0, 'stage_current': 1, 'stage_total':   main.py:535
+                             1, 'overall_progress': 95.16104411540223, 'part_index': 1, 'total_parts': 1}                                                                
+                    DEBUG    DEBUG:__main__:{'type': 'progress_end', 'stage': 'Subset font', 'stage_progress': 100.0, 'stage_current': 1, 'stage_total': 1,   main.py:535
+                             'overall_progress': 95.16104411540223, 'part_index': 1, 'total_parts': 1}                                                                   
+                    DEBUG    DEBUG:__main__:{'type': 'progress_start', 'stage': 'Save PDF', 'stage_progress': 0.0, 'stage_current': 0, 'stage_total': 2,      main.py:535
+                             'overall_progress': 95.16104411540223, 'part_index': 1, 'total_parts': 1}                                                                   
+translate                                              ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╺━  95/100   0:05:46 0:00:16
+Parse PDF and Create Intermediate Representation (1/1) ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4/4       0:00:00 0:00:00
+DetectScannedFile (1/1)                                ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4/4       0:00:00 0:00:00
+[08/01/25 14:02:16] INFO     INFO:babeldoc.format.pdf.document_il.backend.pdf_creater:PDF save with clean=True completed successfully                  pdf_creater.py:754
+                    DEBUG    DEBUG:__main__:{'type': 'progress_update', 'stage': 'Save PDF', 'stage_progress': 50.0, 'stage_current': 1, 'stage_total': 2,    main.py:535
+                             'overall_progress': 97.58052205770112, 'part_index': 1, 'total_parts': 1}                                                                   
+                    DEBUG    DEBUG:__main__:{'type': 'progress_start', 'stage': 'Add Fonts', 'stage_progress': 0.0, 'stage_current': 0, 'stage_total': 1320,  main.py:535
+                             'overall_progress': 94.69546634101664, 'part_index': 1, 'total_parts': 1}                                                                   
+                    DEBUG    DEBUG:__main__:{'type': 'progress_update', 'stage': 'Add Fonts', 'stage_progress': 0.07575757575757576, 'stage_current': 1,      main.py:535
+                             'stage_total': 1320, 'overall_progress': 94.69581905145178, 'part_index': 1, 'total_parts': 1}                                              
+                    DEBUG    DEBUG:__main__:{'type': 'progress_update', 'stage': 'Add Fonts', 'stage_progress': 68.33333333333333, 'stage_current': 902,      main.py:535
+                             'stage_total': 1320, 'overall_progress': 95.01361115351347, 'part_index': 1, 'total_parts': 1}                                              
+                    DEBUG    DEBUG:__main__:{'type': 'progress_end', 'stage': 'Add Fonts', 'stage_progress': 100.0, 'stage_current': 1320, 'stage_total':     main.py:535
+                             1320, 'overall_progress': 95.16104411540223, 'part_index': 1, 'total_parts': 1}                                                             
+[08/01/25 14:02:18] INFO     INFO:babeldoc.format.pdf.document_il.backend.pdf_creater:Font subsetting completed successfully                           pdf_creater.py:639
+translate                                              ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╺━  95/100   0:05:50 0:00:10
+Parse PDF and Create Intermediate Representation (1/1) ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4/4       0:00:00 0:00:00
+DetectScannedFile (1/1)                                ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4/4       0:00:00 0:00:00
+Parse Page Layout (1/1)                                ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4/4       0:00:03 0:00:00
+Parse Table (1/1)                                      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4/4       0:00:01 0:00:00
+[08/01/25 14:02:20] INFO     INFO:babeldoc.format.pdf.document_il.backend.pdf_creater:PDF save with clean=True completed successfully                  pdf_creater.py:754
+                    DEBUG    DEBUG:__main__:{'type': 'progress_update', 'stage': 'Save PDF', 'stage_progress': 100.0, 'stage_current': 2, 'stage_total': 2,   main.py:535
+                             'overall_progress': 100.0, 'part_index': 1, 'total_parts': 1}                                                                               
+                    DEBUG    DEBUG:__main__:{'type': 'progress_update', 'stage': 'Save PDF', 'stage_progress': 100.0, 'stage_current': 2, 'stage_total': 2,   main.py:535
+                             'overall_progress': 100.0, 'part_index': 1, 'total_parts': 1}                                                                               
+                    DEBUG    DEBUG:__main__:{'type': 'progress_end', 'stage': 'Save PDF', 'stage_progress': 100.0, 'stage_current': 2, 'stage_total': 2,      main.py:535
+                             'overall_progress': 100.0, 'part_index': 1, 'total_parts': 1}                                                                               
+translate                                              ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100/100   0:05:51 0:00:00
+                    INFO     INFO:babeldoc.format.pdf.high_level:Peak memory usage: 1859.00 MB                                                          high_level.py:390
+translate                                              ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100/100   0:05:51 0:00:00                                                
+                    INFO     INFO:babeldoc.format.pdf.high_level:finish translate: demo2.pdf, cost: 351.2205629348755 s                                 high_level.py:622
+translate                                              ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100/100   0:05:51 0:00:00
+Parse PDF and Create Intermediate Representation (1/1) ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4/4       0:00:00 0:00:00
+DetectScannedFile (1/1)                                ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4/4       0:00:00 0:00:00
+Parse Page Layout (1/1)                                ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4/4       0:00:03 0:00:00
+Parse Table (1/1)                                      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4/4       0:00:01 0:00:00
+translate                                              ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100/100   0:05:51 0:00:00
+Parse PDF and Create Intermediate Representation (1/1) ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4/4       0:00:00 0:00:00
+DetectScannedFile (1/1)                                ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4/4       0:00:00 0:00:00
+Parse Page Layout (1/1)                                ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4/4       0:00:03 0:00:00
+Parse Table (1/1)                                      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4/4       0:00:01 0:00:00
+Parse Paragraphs (1/1)                                 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4/4       0:00:01 0:00:00
+Parse Formulas and Styles (1/1)                        ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4/4       0:00:00 0:00:00
+translate                                              ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100/100   0:05:51 0:00:00
+Parse PDF and Create Intermediate Representation (1/1) ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4/4       0:00:00 0:00:00
+DetectScannedFile (1/1)                                ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4/4       0:00:00 0:00:00
+Parse Page Layout (1/1)                                ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4/4       0:00:03 0:00:00
+Parse Table (1/1)                                      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4/4       0:00:01 0:00:00
+Parse Paragraphs (1/1)                                 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4/4       0:00:01 0:00:00
+Parse Formulas and Styles (1/1)                        ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4/4       0:00:00 0:00:00
+translate                                              ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100/100   0:05:51 0:00:00
+Parse PDF and Create Intermediate Representation (1/1) ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4/4       0:00:00 0:00:00
+DetectScannedFile (1/1)                                ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4/4       0:00:00 0:00:00
+Parse Page Layout (1/1)                                ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4/4       0:00:03 0:00:00
+Parse Table (1/1)                                      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4/4       0:00:01 0:00:00
+Parse Paragraphs (1/1)                                 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4/4       0:00:01 0:00:00
+Parse Formulas and Styles (1/1)                        ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4/4       0:00:00 0:00:00
+                    INFO     INFO:babeldoc.format.pdf.high_level:No TOC found in the original PDF, skipping migration.                                  high_level.py:667
+translate                                              ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100/100   0:05:51 0:00:00
+Parse PDF and Create Intermediate Representation (1/1) ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4/4       0:00:00 0:00:00
+DetectScannedFile (1/1)                                ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4/4       0:00:00 0:00:00
+Parse Page Layout (1/1)                                ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4/4       0:00:03 0:00:00
+Parse Table (1/1)                                      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4/4       0:00:01 0:00:00
+Parse Paragraphs (1/1)                                 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4/4       0:00:01 0:00:00
+Parse Formulas and Styles (1/1)                        ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4/4       0:00:00 0:00:00
+                    DEBUG    DEBUG:__main__:{'type': 'finish', 'translate_result': <babeldoc.format.pdf.translation_config.TranslateResult object at          main.py:535
+                             0x000001D6E03B7280>}                                                                                                                        
+translate                                              ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100/100   0:05:51 0:00:00
+Parse PDF and Create Intermediate Representation (1/1) ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4/4       0:00:00 0:00:00
+DetectScannedFile (1/1)                                ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4/4       0:00:00 0:00:00
+Parse Page Layout (1/1)                                ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4/4       0:00:03 0:00:00
+Parse Table (1/1)                                      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4/4       0:00:01 0:00:00
+Parse Paragraphs (1/1)                                 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4/4       0:00:01 0:00:00
+Parse Formulas and Styles (1/1)                        ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4/4       0:00:00 0:00:00
+translate                                              ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100/100   0:05:51 0:00:00                                                
+Parse PDF and Create Intermediate Representation (1/1) ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4/4       0:00:00 0:00:00                                                
+DetectScannedFile (1/1)                                ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4/4       0:00:00 0:00:00                                                
+Parse Page Layout (1/1)                                ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4/4       0:00:03 0:00:00                                                
+Parse Table (1/1)                                      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4/4       0:00:01 0:00:00                                                
+Parse Paragraphs (1/1)                                 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4/4       0:00:01 0:00:00                                                
+Parse Formulas and Styles (1/1)                        ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4/4       0:00:00 0:00:00                                                
+Automatic Term Extraction (1/1)                        ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 487/487   0:01:17 0:00:00                                                
+                    INFO     INFO:__main__:Translation results:                                                                                               main.py:541
+                                     Original PDF: demo2.pdf                                                                                                             
+                                     Total time: 351.22 seconds                                                                                                          
+                                     Monolingual PDF: D:\WorkSpace\BabelDOC\demo2.debug.no_watermark.zh.mono.pdf                                                         
+                                     Dual-language PDF: D:\WorkSpace\BabelDOC\demo2.debug.no_watermark.zh.dual.pdf                                                       
+                                     Peak memory usage: 1859.0 MB                                                                                                        
+translate                                              ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100/100   0:05:51 0:00:00                                                
+Parse PDF and Create Intermediate Representation (1/1) ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4/4       0:00:00 0:00:00                                                
+DetectScannedFile (1/1)                                ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4/4       0:00:00 0:00:00                                                
+Parse Page Layout (1/1)                                ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4/4       0:00:03 0:00:00                                                
+Parse Table (1/1)                                      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4/4       0:00:01 0:00:00                                                
+Parse Paragraphs (1/1)                                 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4/4       0:00:01 0:00:00                                                
+Parse Formulas and Styles (1/1)                        ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4/4       0:00:00 0:00:00                                                
+Automatic Term Extraction (1/1)                        ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 487/487   0:01:17 0:00:00
+Translate Paragraphs (1/1)                             ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 160/160   0:04:07 0:00:00
+Typesetting (1/1)                                      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 8/8       0:00:00 0:00:00
+Add Fonts (1/1)                                        ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1320/1320 0:00:00 0:00:00
+Generate drawing instructions (1/1)                    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4/4       0:00:00 0:00:00
+Generate drawing instructions (1/1)                    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4/4       0:00:00 0:00:00
+Subset font (1/1)                                      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1/1       0:00:01 0:00:00
+Save PDF (1/1)                                         ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2/2       0:00:05 0:00:00                    INFO     INFO:__main__:Total tokens: 45612                                                                                                main.py:543
+                    INFO     INFO:__main__:Prompt tokens: 33404                                                                                               main.py:544                    INFO     INFO:__main__:Completion tokens: 12208                                                                                           main.py:545                    DEBUG    DEBUG:babeldoc.progress_monitor:ProgressMonitor __exit__                                                             progress_monitor.py:137                    INFO     INFO:babeldoc.format.pdf.high_level:Waiting for translation to finish...                                                   high_level.py:344                    DEBUG    DEBUG:babeldoc.format.pdf.high_level:do_translate finally                                                                  high_level.py:647

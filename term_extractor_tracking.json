@@ -1,0 +1,245 @@
+{
+  "page": [
+    {
+      "paragraph": [
+        {
+          "pdf_unicodes": [
+            "Status: Currently O\u0000cial on 16-Feb-2025 O\u0000cial Date: O\u0000cial as of 01-Dec-2023 Document Type: USP Monographs DocId: GUID-52ADDB0D-4BB0-4C45-AABA-7708A665E976_4_en-US DOI: https://doi.org/10.31003/USPNF_M78709_04_01 DOI Ref: b9fcp",
+            "© 2025 USPC Do not distribute",
+            "Sulbactam Sodium",
+            "Change to read:",
+            "C H NNaO S 255.22 4-Thia-1-azabicyclo[3.2.0]heptane-2-carboxylic acid, 3,3-dimethyl-7-oxo-, 4,4-dioxide, sodium salt, (2S-cis)-; ® Sodium (2S,5R)-3,3-dimethyl-7-oxo-4-thia-1-azabicyclo[3.2.0]heptane-2-carboxylate 4,4-dioxide CAS RN : 69388-84-7; UNII: DKQ4T82YE6. ▲ Sulbactam (free acid) ® C H NO S 233.24 CAS RN : 68373-14-8; UNII: S4TF6I2330.▲ (USP 1-Dec-2023)",
+            "DEFINITION",
+            "Sulbactam Sodium contains NLT 886 and NMT 941 μg/mg of sulbactam (C H NO S), calculated on the anhydrous basis.",
+            "IDENTIFICATION",
+            "Add the following:",
+            "▲ • A. SPECTROSCOPIC IDENTIFICATION TESTS 197 , Infrared Spectroscopy: 197K▲ (USP 1-Dec-2023)",
+            "Change to read:",
+            "• ▲ B.▲ (USP 1-DEC-2023) The retention time of the major peak of the Sample solution corresponds to that of the Standard solution, as obtained in the Assay.",
+            "Change to read:"
+          ],
+          "output": "```json\n[\n  {\"src\": \"Status\", \"tgt\": \"状态\"},\n  {\"src\": \"Official\", \"tgt\": \"正式\"},\n  {\"src\": \"16-Feb-2025\", \"tgt\": \"2025年2月16日\"},\n  {\"src\": \"01-Dec-2023\", \"tgt\": \"2023年12月1日\"},\n  {\"src\": \"Document Type\", \"tgt\": \"文档类型\"},\n  {\"src\": \"USP Monographs\", \"tgt\": \"USP专论\"},\n  {\"src\": \"DocId\", \"tgt\": \"文档标识\"},\n  {\"src\": \"GUID-52ADDB0D-4BB0-4C45-AABA-7708A665E976_4_en-US\", \"tgt\": \"GUID-52ADDB0D-4BB0-4C45-AABA-7708A665E976_4_en-US\"},\n  {\"src\": \"DOI\", \"tgt\": \"DOI\"},\n  {\"src\": \"https://doi.org/10.31003/USPNF_M78709_04_01\", \"tgt\": \"https://doi.org/10.31003/USPNF_M78709_04_01\"},\n  {\"src\": \"DOI Ref\", \"tgt\": \"DOI参考\"},\n  {\"src\": \"b9fcp\", \"tgt\": \"b9fcp\"},\n  {\"src\": \"© 2025 USPC\", \"tgt\": \"© 2025 美国药典委员会\"},\n  {\"src\": \"Sulbactam Sodium\", \"tgt\": \"磺巴坦钠\"},\n  {\"src\": \"C H NNaO S 255.22\", \"tgt\": \"C H NNaO S 255.22\"},\n  {\"src\": \"CAS RN\", \"tgt\": \"CAS登记号\"},\n  {\"src\": \"69388-84-7\", \"tgt\": \"69388-84-7\"},\n  {\"src\": \"UNII\", \"tgt\": \"UNII编码\"},\n  {\"src\": \"DKQ4T82YE6\", \"tgt\": \"DKQ4T82YE6\"},\n  {\"src\": \"Sulbactam (free acid)\", \"tgt\": \"磺巴坦（游离酸）\"},\n  {\"src\": \"C H NO S 233.24\", \"tgt\": \"C H NO S 233.24\"},\n  {\"src\": \"68373-14-8\", \"tgt\": \"68373-14-8\"},\n  {\"src\": \"S4TF6I2330\", \"tgt\": \"S4TF6I2330\"},\n  {\"src\": \"USP\", \"tgt\": \"美国药典\"},\n  {\"src\": \"DEFINITION\", \"tgt\": \"定义\"},\n  {\"src\": \"Sulbactam Sodium contains NLT 886 and NMT 941 μg/mg of sulbactam (C H NO S), calculated on the anhydrous basis.\", \"tgt\": \"磺巴坦钠包含不低于886且不超过941 μg/mg的磺巴坦（C H NO S），以无水计算。\"},\n  {\"src\": \"IDENTIFICATION\", \"tgt\": \"鉴别\"},\n  {\"src\": \"Add the following\", \"tgt\": \"添加以下内容\"},\n  {\"src\": \"Infrared Spectroscopy\", \"tgt\": \"红外光谱法\"},\n  {\"src\": \"The retention time of the major peak of the Sample solution corresponds to that of the Standard solution, as obtained in the Assay.\", \"tgt\": \"样品溶液的主要峰保留时间与标准溶液的保留时间一致，如在测定中获得。\"}\n]\n```"
+        },
+        {
+          "pdf_unicodes": [
+            "IDENTIFICATION TESTS—GENERAL 191 , Chemical Identification Tests, Sodium: Meets the requirements",
+            "ASSAY",
+            "• PROCEDURE Buffer solution: 2.7 g/L of monobasic potassium phosphate, adjusted with dilute phosphoric acid to a pH of 4.0 Solution A: 5.4 g/L of monobasic potassium phosphate, adjusted with dilute phosphoric acid to a pH of 4.0 Solution B: Acetonitrile Mobile phase: See Table 1.",
+            "Table 1",
+            "Time",
+            "(min)",
+            "Solution A",
+            "(%)",
+            "Solution B",
+            "(%)",
+            "0",
+            "98",
+            "2"
+          ],
+          "output": "```json\n[\n  {\n    \"src\": \"IDENTIFICATION TESTS\",\n    \"tgt\": \"鉴别试验\"\n  },\n  {\n    \"src\": \"Chemical Identification Tests\",\n    \"tgt\": \"化学鉴别试验\"\n  },\n  {\n    \"src\": \"Sodium\",\n    \"tgt\": \"钠\"\n  },\n  {\n    \"src\": \"ASSAY\",\n    \"tgt\": \"测定\"\n  },\n  {\n    \"src\": \"Buffer solution\",\n    \"tgt\": \"缓冲溶液\"\n  },\n  {\n    \"src\": \"monobasic potassium phosphate\",\n    \"tgt\": \"磷酸二氢钾\"\n  },\n  {\n    \"src\": \"dilute phosphoric acid\",\n    \"tgt\": \"稀磷酸\"\n  },\n  {\n    \"src\": \"pH\",\n    \"tgt\": \"酸碱度\"\n  },\n  {\n    \"src\": \"Solution A\",\n    \"tgt\": \"溶液A\"\n  },\n  {\n    \"src\": \"Solution B\",\n    \"tgt\": \"溶液B\"\n  },\n  {\n    \"src\": \"Acetonitrile\",\n    \"tgt\": \"乙腈\"\n  },\n  {\n    \"src\": \"Mobile phase\",\n    \"tgt\": \"流动相\"\n  },\n  {\n    \"src\": \"Table 1\",\n    \"tgt\": \"表1\"\n  },\n  {\n    \"src\": \"Time\",\n    \"tgt\": \"时间\"\n  },\n  {\n    \"src\": \"min\",\n    \"tgt\": \"分钟\"\n  }\n]\n```"
+        },
+        {
+          "pdf_unicodes": [
+            "7.5",
+            "50",
+            "50",
+            "8.5",
+            "50",
+            "50",
+            "9.0",
+            "98",
+            "2",
+            "8 10 5 811 5",
+            "8 11 5",
+            "2/16/25, 8:35 PM",
+            "USP-NF Sulbactam Sodium"
+          ],
+          "output": "```json\n[\n  {\n    \"src\": \"USP-NF Sulbactam Sodium\",\n    \"tgt\": \"美国药典-国家处方集 磺巴坦钠\"\n  }\n]\n```"
+        }
+      ]
+    },
+    {
+      "paragraph": [
+        {
+          "pdf_unicodes": [
+            "Time",
+            "(min)",
+            "Solution A",
+            "(%)",
+            "Solution B",
+            "(%)",
+            "12.5",
+            "98",
+            "2",
+            "Standard solution: 0.7 mg/mL of USP Sulbactam RS prepared as follows. Dissolve a suitable amount of USP Sulbactam RS in acetonitrile, using 2% of the \u0000nal volume, and dilute with Buffer solution to volume.",
+            "Sample solution: 0.77 mg/mL of Sulbactam Sodium prepared as follows. Dissolve a suitable amount of Sulbactam Sodium in acetonitrile, using 2% of the \u0000nal volume, and dilute with Buffer solution to volume.",
+            "Chromatographic system",
+            "(See Chromatography 〈621〉, System Suitability.)"
+          ],
+          "output": "[\n    {\"src\": \"Time\", \"tgt\": \"时间\"},\n    {\"src\": \"Solution A\", \"tgt\": \"溶液A\"},\n    {\"src\": \"Solution B\", \"tgt\": \"溶液B\"},\n    {\"src\": \"Standard solution\", \"tgt\": \"标准溶液\"},\n    {\"src\": \"USP Sulbactam RS\", \"tgt\": \"USP舒巴坦RS\"},\n    {\"src\": \"acetonitrile\", \"tgt\": \"乙腈\"},\n    {\"src\": \"Buffer solution\", \"tgt\": \"缓冲溶液\"},\n    {\"src\": \"Sample solution\", \"tgt\": \"样品溶液\"},\n    {\"src\": \"Sulbactam Sodium\", \"tgt\": \"舒巴坦钠\"},\n    {\"src\": \"Chromatographic system\", \"tgt\": \"色谱系统\"},\n    {\"src\": \"Chromatography 〈621〉\", \"tgt\": \"色谱法〈621〉\"},\n    {\"src\": \"System Suitability\", \"tgt\": \"系统适用性\"}\n]"
+        },
+        {
+          "pdf_unicodes": [
+            "Mode: LC Detector: UV 215 nm Column: 4-mm × 15-cm; 3-μm packing L1 Column temperature: 40° Flow rate: 1 mL/min Injection volume: 20 μL System suitability Sample: Standard solution Suitability requirements Relative standard deviation: NMT 0.73% Analysis Samples: Standard solution and Sample solution Calculate the quantity, in μg, of sulbactam (C H NO S) in each mg of Sulbactam Sodium taken:",
+            "r = peak response from the Sample solution r = peak response from the Standard solution C = concentration of USP Sulbactam RS in the Standard solution (mg/mL) C = concentration of Sulbactam Sodium in the Sample solution (mg/mL) P = potency of sulbactam in USP Sulbactam RS (mg/mg) F = conversion factor, 1000 μg/mg",
+            "Acceptance criteria: 886–941 μg/mg on the anhydrous basis",
+            "IMPURITIES",
+            "Change to read:",
+            "• ORGANIC IMPURITIES",
+            "Buffer solution, Solu",
+            "tion A, Mobile phase, Sample solution, and Chromatographic system: Proceed as directed in the Assa",
+            "y. Diluent: 2 mL of acetonitrile diluted with Buffer solution to 100 mL System suitability solution: 0.7 μg/mL each of USP Sulbactam Related Compound A RS, USP Sulbactam Related Compound D RS, USP Sulbactam Related Compound E RS, and USP Sulbactam Related Compound F RS, prepared as follows. Dissolve suitable amounts of USP Sulbactam Related Compound A RS, USP Sulbactam Related Compound D RS, USP Sulbactam Related Compound E RS, and USP Sulbactam Related Compound F RS in acetonitrile using 10% of the \u0000nal volume, and sonicate as needed. Dilute with Diluent to volume. Protect this solution from light. Standard stock solution: 0.7 mg/mL of USP Sulbactam RS prepared as follows. Dissolve a suitable amount of USP Sulbactam RS in acetonitrile, using 2% of the \u0000nal volume, and dilute with Buffer solution to volume. Standard solution: 0.7 μg/mL of USP Sulbactam RS from the Standard stock solution, in Diluent System suitability Samples: System suitability solution and Standard solution Suitability requirements Resolution: NLT 1.5 between sulbactam related compound D and sulbactam related compound E, System suitability solution",
+            "8 11 5",
+            "U S S U",
+            "2/16/25, 8:35 PM",
+            "USP-NF Sulbactam Sodium"
+          ],
+          "output": "```json\n[\n    {\"src\": \"Mode\", \"tgt\": \"模式\"},\n    {\"src\": \"LC\", \"tgt\": \"液相色谱\"},\n    {\"src\": \"Detector\", \"tgt\": \"检测器\"},\n    {\"src\": \"UV\", \"tgt\": \"紫外光\"},\n    {\"src\": \"nm\", \"tgt\": \"纳米\"},\n    {\"src\": \"Column\", \"tgt\": \"色谱柱\"},\n    {\"src\": \"packing L1\", \"tgt\": \"填料 L1\"},\n    {\"src\": \"Column temperature\", \"tgt\": \"柱温\"},\n    {\"src\": \"Flow rate\", \"tgt\": \"流速\"},\n    {\"src\": \"Injection volume\", \"tgt\": \"进样体积\"},\n    {\"src\": \"System suitability\", \"tgt\": \"系统适用性\"},\n    {\"src\": \"Sample\", \"tgt\": \"样品\"},\n    {\"src\": \"Standard solution\", \"tgt\": \"标准溶液\"},\n    {\"src\": \"Suitability requirements\", \"tgt\": \"适用性要求\"},\n    {\"src\": \"Relative standard deviation\", \"tgt\": \"相对标准偏差\"},\n    {\"src\": \"Analysis\", \"tgt\": \"分析\"},\n    {\"src\": \"Samples\", \"tgt\": \"样品\"},\n    {\"src\": \"Sample solution\", \"tgt\": \"样品溶液\"},\n    {\"src\": \"sulbactam\", \"tgt\": \"舒巴坦\"},\n    {\"src\": \"Sulbactam Sodium\", \"tgt\": \"舒巴坦钠\"},\n    {\"src\": \"USP Sulbactam RS\", \"tgt\": \"USP舒巴坦RS\"},\n    {\"src\": \"anhydrous basis\", \"tgt\": \"无水基准\"},\n    {\"src\": \"Acceptance criteria\", \"tgt\": \"接受标准\"},\n    {\"src\": \"IMPURITIES\", \"tgt\": \"杂质\"},\n    {\"src\": \"ORGANIC IMPURITIES\", \"tgt\": \"有机杂质\"},\n    {\"src\": \"Buffer solution\", \"tgt\": \"缓冲液\"},\n    {\"src\": \"Solution A\", \"tgt\": \"溶液A\"},\n    {\"src\": \"Mobile phase\", \"tgt\": \"流动相\"},\n    {\"src\": \"Diluent\", \"tgt\": \"稀释剂\"},\n    {\"src\": \"acetonitrile\", \"tgt\": \"乙腈\"},\n    {\"src\": \"System suitability solution\", \"tgt\": \"系统适用性溶液\"},\n    {\"src\": \"USP Sulbactam Related Compound A RS\", \"tgt\": \"USP舒巴坦相关化合物A RS\"},\n    {\"src\": \"USP Sulbactam Related Compound D RS\", \"tgt\": \"USP舒巴坦相关化合物D RS\"},\n    {\"src\": \"USP Sulbactam Related Compound E RS\", \"tgt\": \"USP舒巴坦相关化合物E RS\"},\n    {\"src\": \"USP Sulbactam Related Compound F RS\", \"tgt\": \"USP舒巴坦相关化合物F RS\"},\n    {\"src\": \"Standard stock solution\", \"tgt\": \"标准储备溶液\"},\n    {\"src\": \"Resolution\", \"tgt\": \"分离度\"}\n]\n```"
+        }
+      ]
+    },
+    {
+      "paragraph": [
+        {
+          "pdf_unicodes": [
+            "Relative standard deviation: NMT 5.0%, Standard solution",
+            "Analysis",
+            "Samples: Sample solution and Standard solution Calculate the percentage of each impurity in the portion of Sulbactam Sodium taken:",
+            "r = peak response of each impurity from the Sample solution r = peak response from the Standard solution C = concentration of USP Sulbactam RS in the Standard solution (mg/mL) C = concentration of Sulbactam Sodium in the Sample solution (mg/mL) P = potency of sulbactam in USP Sulbactam RS (mg/mg) F = relative response factor (see Table 2)",
+            "Acceptance criteria: See Table 2. The reporting threshold is 0.05%.",
+            "Table 2",
+            "Name",
+            "Relative",
+            "Retention",
+            "Time",
+            "Relative",
+            "Response",
+            "Factor"
+          ],
+          "output": "```json\n[\n    {\"src\": \"Relative standard deviation\", \"tgt\": \"相对标准偏差\"},\n    {\"src\": \"NMT 5.0%\", \"tgt\": \"不超过5.0%\"},\n    {\"src\": \"Standard solution\", \"tgt\": \"标准溶液\"},\n    {\"src\": \"Analysis\", \"tgt\": \"分析\"},\n    {\"src\": \"Sample solution\", \"tgt\": \"样品溶液\"},\n    {\"src\": \"Sulbactam Sodium\", \"tgt\": \"磺巴坦钠\"},\n    {\"src\": \"impurity\", \"tgt\": \"杂质\"},\n    {\"src\": \"peak response\", \"tgt\": \"峰响应\"},\n    {\"src\": \"USP Sulbactam RS\", \"tgt\": \"USP磺巴坦标准品\"},\n    {\"src\": \"potency\", \"tgt\": \"效价\"},\n    {\"src\": \"relative response factor\", \"tgt\": \"相对响应因子\"},\n    {\"src\": \"Acceptance criteria\", \"tgt\": \"接受标准\"},\n    {\"src\": \"reporting threshold\", \"tgt\": \"报告阈值\"},\n    {\"src\": \"Table 2\", \"tgt\": \"表2\"},\n    {\"src\": \"Relative Retention Time\", \"tgt\": \"相对保留时间\"},\n    {\"src\": \"Relative Response Factor\", \"tgt\": \"相对响应因子\"}\n]\n```"
+        },
+        {
+          "pdf_unicodes": [
+            "Acceptance",
+            "Criteria,",
+            "NMT (%)",
+            "Sulbactam related compound",
+            "Aa",
+            "0.4",
+            "1.7",
+            "0.5",
+            "▲ 6-Aminopenicillanic acid▲",
+            "(USP 1-Dec-2023) (Amoxicillin",
+            "related compound A)b",
+            "0.6",
+            "2.0"
+          ],
+          "output": "```json\n[\n    {\"src\": \"Acceptance\", \"tgt\": \"接受\"},\n    {\"src\": \"Criteria\", \"tgt\": \"标准\"},\n    {\"src\": \"NMT\", \"tgt\": \"不超过\"},\n    {\"src\": \"Sulbactam\", \"tgt\": \"舒巴坦\"},\n    {\"src\": \"Sulbactam related compound\", \"tgt\": \"舒巴坦相关化合物\"},\n    {\"src\": \"Aa\", \"tgt\": \"Aa\"},\n    {\"src\": \"6-Aminopenicillanic acid\", \"tgt\": \"6-氨基青霉烷酸\"},\n    {\"src\": \"USP\", \"tgt\": \"美国药典\"},\n    {\"src\": \"1-Dec-2023\", \"tgt\": \"2023年12月1日\"},\n    {\"src\": \"Amoxicillin\", \"tgt\": \"阿莫西林\"},\n    {\"src\": \"Amoxicillin related compound A\", \"tgt\": \"阿莫西林相关化合物A\"}\n]\n```"
+        },
+        {
+          "pdf_unicodes": [
+            "0.1",
+            "Sulbactam",
+            "1.0",
+            "—",
+            "—",
+            "6-Bromopenicillanic acid",
+            "sulfonec",
+            "1.6",
+            "1.0",
+            "0.2",
+            "Sulbactam related compound",
+            "Dd",
+            "2.0"
+          ],
+          "output": "```json\n[\n    {\"src\": \"Sulbactam\", \"tgt\": \"舒巴坦\"},\n    {\"src\": \"6-Bromopenicillanic acid\", \"tgt\": \"6-溴青霉烷酸\"},\n    {\"src\": \"Sulbactam related compound\", \"tgt\": \"舒巴坦相关化合物\"}\n]\n```"
+        },
+        {
+          "pdf_unicodes": [
+            "2.0",
+            "0.1",
+            "Sulbactam related compound",
+            "Ee",
+            "2.1",
+            "1.0",
+            "0.2",
+            "Sulbactam related compound",
+            "Ff",
+            "2.5",
+            "1.7",
+            "0.1",
+            "Any individual unspeci\u0000ed"
+          ],
+          "output": "```json\n[\n  {\n    \"src\": \"Sulbactam related compound\",\n    \"tgt\": \"舒巴坦相关化合物\"\n  },\n  {\n    \"src\": \"Any individual unspecified\",\n    \"tgt\": \"任何未指明的个体\"\n  }\n]\n```"
+        },
+        {
+          "pdf_unicodes": [
+            "impurity",
+            "—",
+            "1.0",
+            "0.10",
+            "Total impurities",
+            "—",
+            "—",
+            "1.0",
+            "U S S U",
+            "2/16/25, 8:35 PM",
+            "USP-NF Sulbactam Sodium"
+          ],
+          "output": "[\n    {\n        \"src\": \"impurity\",\n        \"tgt\": \"杂质\"\n    },\n    {\n        \"src\": \"Total impurities\",\n        \"tgt\": \"总杂质\"\n    },\n    {\n        \"src\": \"U S S U\",\n        \"tgt\": \"U S S U\"\n    },\n    {\n        \"src\": \"USP-NF Sulbactam Sodium\",\n        \"tgt\": \"USP-NF 舒巴坦钠\"\n    }\n]"
+        }
+      ]
+    },
+    {
+      "paragraph": [
+        {
+          "pdf_unicodes": [
+            "e 6,6-Dibromopenicillanic acid sulfone; also known as (2S,5R)-6,6-Dibromo-3,3-dimethyl-7-oxo-4-thia-1-azabicyclo[3.2.0]heptane-2- carboxylic acid 4,4-dioxide. f 6,6-Dibromopenicillanic acid; also known as (2S,5R)-6,6-Dibromo-3,3-dimethyl-7-oxo-4-thia-1-azabicyclo[3.2.0]heptane-2-carboxylic aci",
+            "d.",
+            "SPECIFIC TESTS",
+            "• CRYSTALLINITY",
+            "〈",
+            "695〉: Meets the requirements",
+            "Change to read:",
+            "• BACTERIAL ENDOTOXINS TEST 〈85〉: Where the label states that Sulbactam Sodium is sterile or must be subjected to further processing during the ▲ preparation of injectable dosage forms, the level of bacterial endotoxins is such that the requirement under the relevant dosage form monograph(s) in which Sulbactam Sodium is used can be met.▲ (USP 1-Dec-2023)",
+            "Change to read:",
+            "• STERILITY TESTS 〈71〉: Where the label states that Sulbactam Sodium is sterile, it meets the requirements. ▲▲ (USP 1-Dec-2023)",
+            "• WATER DETERMINATION 〈921〉, Method I: NMT 1.0%",
+            "ADDITIONAL REQUIREMENTS",
+            "• PACKAGING AND STORAGE: Preserve in tight containers."
+          ],
+          "output": "```json\n[\n  {\"src\": \"6,6-Dibromopenicillanic acid sulfone\", \"tgt\": \"6,6-二溴青霉烷酸砜\"},\n  {\"src\": \"6,6-Dibromopenicillanic acid\", \"tgt\": \"6,6-二溴青霉烷酸\"},\n  {\"src\": \"(2S,5R)-6,6-Dibromo-3,3-dimethyl-7-oxo-4-thia-1-azabicyclo[3.2.0]heptane-2-carboxylic acid 4,4-dioxide\", \"tgt\": \"(2S,5R)-6,6-二溴-3,3-二甲基-7-氧-4-硫-1-氮双环[3.2.0]庚烷-2-羧酸 4,4-二氧化物\"},\n  {\"src\": \"(2S,5R)-6,6-Dibromo-3,3-dimethyl-7-oxo-4-thia-1-azabicyclo[3.2.0]heptane-2-carboxylic acid\", \"tgt\": \"(2S,5R)-6,6-二溴-3,3-二甲基-7-氧-4-硫-1-氮双环[3.2.0]庚烷-2-羧酸\"},\n  {\"src\": \"Sulbactam Sodium\", \"tgt\": \"舒巴坦钠\"},\n  {\"src\": \"CRYSTALLINITY\", \"tgt\": \"晶体结构\"},\n  {\"src\": \"BACTERIAL ENDOTOXINS TEST\", \"tgt\": \"细菌内毒素测试\"},\n  {\"src\": \"STERILITY TESTS\", \"tgt\": \"无菌测试\"},\n  {\"src\": \"WATER DETERMINATION\", \"tgt\": \"水分测定\"},\n  {\"src\": \"PACKAGING AND STORAGE\", \"tgt\": \"包装与存储\"}\n]\n```"
+        },
+        {
+          "pdf_unicodes": [
+            "• LABELING: Where it is intended for use in preparing injectable dosage forms, the label states that it is sterile or must be subjected to further processing during the preparation of injectable dosage forms.",
+            "Change to read:",
+            "• USP REFERENCE STANDARDS 〈11〉 USP Sulbactam RS ▲ USP Sulbactam Sodium RS▲ (USP 1-Dec-2023) USP Sulbactam Related Compound A RS (2S)-2-Amino-3-methyl-3-sul\u0000nobutanoic acid. C H NO S 181.21 USP Sulbactam Related Compound D RS (2S,5R,6R)-6-Bromo-3,3-dimethyl-7-oxo-4-thia-1-azabicyclo[3.2.0]heptane-2-carboxylic acid, potassium salt. C H BrKNO S 318.23 USP Sulbactam Related Compound E RS (2S,5R)-6,6-Dibromo-3,3-dimethyl-7-oxo-4-thia-1-azabicyclo[3.2.0]heptane-2-carboxylic acid 4,4-dioxide. C H Br NO S 391.03 USP Sulbactam Related Compound F RS (2S,5R)-6,6-Dibromo-3,3-dimethyl-7-oxo-4-thia-1-azabicyclo[3.2.0]heptane-2-carboxylic acid. C H Br NO S 359.03",
+            "Auxiliary Information - Please check for your question in the FAQs before contacting USP.",
+            "Topic/Question",
+            "Contact",
+            "Expert Committee",
+            "SULBACTAM SODIUM",
+            "Documentary Standards Support",
+            "SM12020 Small Molecules 1",
+            "REFERENCE STANDARD SUPPORT",
+            "RS Technical Services",
+            "RSTECH@usp.org"
+          ],
+          "output": "```json\n[\n    {\"src\": \"LABELING\", \"tgt\": \"标签\"},\n    {\"src\": \"injectable dosage forms\", \"tgt\": \"注射剂型\"},\n    {\"src\": \"sterile\", \"tgt\": \"无菌的\"},\n    {\"src\": \"USP REFERENCE STANDARDS\", \"tgt\": \"USP参考标准\"},\n    {\"src\": \"USP Sulbactam RS\", \"tgt\": \"USP舒巴坦RS\"},\n    {\"src\": \"USP Sulbactam Sodium RS\", \"tgt\": \"USP舒巴坦钠RS\"},\n    {\"src\": \"USP Sulbactam Related Compound A RS\", \"tgt\": \"USP舒巴坦相关化合物ARS\"},\n    {\"src\": \"(2S)-2-Amino-3-methyl-3-sulfinobutanoic acid\", \"tgt\": \"(2S)-2-氨基-3-甲基-3-亚磺基丁酸\"},\n    {\"src\": \"USP Sulbactam Related Compound D RS\", \"tgt\": \"USP舒巴坦相关化合物DRS\"},\n    {\"src\": \"(2S,5R,6R)-6-Bromo-3,3-dimethyl-7-oxo-4-thia-1-azabicyclo[3.2.0]heptane-2-carboxylic acid, potassium salt\", \"tgt\": \"(2S,5R,6R)-6-溴-3,3-二甲基-7-氧代-4-硫代-1-氮杂双环[3.2.0]庚烷-2-羧酸钾盐\"},\n    {\"src\": \"USP Sulbactam Related Compound E RS\", \"tgt\": \"USP舒巴坦相关化合物ERS\"},\n    {\"src\": \"(2S,5R)-6,6-Dibromo-3,3-dimethyl-7-oxo-4-thia-1-azabicyclo[3.2.0]heptane-2-carboxylic acid 4,4-dioxide\", \"tgt\": \"(2S,5R)-6,6-二溴-3,3-二甲基-7-氧代-4-硫代-1-氮杂双环[3.2.0]庚烷-2-羧酸 4,4-二氧化物\"},\n    {\"src\": \"USP Sulbactam Related Compound F RS\", \"tgt\": \"USP舒巴坦相关化合物FRS\"},\n    {\"src\": \"(2S,5R)-6,6-Dibromo-3,3-dimethyl-7-oxo-4-thia-1-azabicyclo[3.2.0]heptane-2-carboxylic acid\", \"tgt\": \"(2S,5R)-6,6-二溴-3,3-二甲基-7-氧代-4-硫代-1-氮杂双环[3.2.0]庚烷-2-羧酸\"},\n    {\"src\": \"Auxiliary Information\", \"tgt\": \"附加信息\"},\n    {\"src\": \"FAQs\", \"tgt\": \"常见问题解答\"},\n    {\"src\": \"USP\", \"tgt\": \"美国药典\"},\n    {\"src\": \"Expert Committee\", \"tgt\": \"专家委员会\"},\n    {\"src\": \"SULBACTAM SODIUM\", \"tgt\": \"舒巴坦钠\"},\n    {\"src\": \"Documentary Standards Support\", \"tgt\": \"文献标准支持\"},\n    {\"src\": \"SM12020 Small Molecules 1\", \"tgt\": \"SM12020小分子1\"},\n    {\"src\": \"REFERENCE STANDARD SUPPORT\", \"tgt\": \"参考标准支持\"},\n    {\"src\": \"RS Technical Services\", \"tgt\": \"RS技术服务\"},\n    {\"src\": \"RSTECH@usp.org\", \"tgt\": \"RSTECH@usp.org\"}\n]\n```"
+        },
+        {
+          "pdf_unicodes": [
+            "SM12020 Small Molecules 1",
+            "Chromatographic Database Information: Chromatographic Database",
+            "Most Recently Appeared In: Pharmacopeial Forum: Volume No. 47(4) Current DocID: GUID-52ADDB0D-4BB0-4C45-AABA-7708A665E976_4_en-US DOI: https://doi.org/10.31003/USPNF_M78709_04_01 DOI ref: b9fcp",
+            "5 11 4 8 9 3 8 9 2 5 8 9 2 3",
+            "2/16/25, 8:35 PM",
+            "USP-NF Sulbactam Sodium"
+          ],
+          "output": "```json\n[\n  {\n    \"src\": \"SM12020\",\n    \"tgt\": \"SM12020\"\n  },\n  {\n    \"src\": \"Small Molecules\",\n    \"tgt\": \"小分子\"\n  },\n  {\n    \"src\": \"Chromatographic Database\",\n    \"tgt\": \"色谱数据库\"\n  },\n  {\n    \"src\": \"Pharmacopeial Forum\",\n    \"tgt\": \"药典论坛\"\n  },\n  {\n    \"src\": \"GUID-52ADDB0D-4BB0-4C45-AABA-7708A665E976_4_en-US\",\n    \"tgt\": \"GUID-52ADDB0D-4BB0-4C45-AABA-7708A665E976_4_en-US\"\n  },\n  {\n    \"src\": \"DOI\",\n    \"tgt\": \"数字对象识别码\"\n  },\n  {\n    \"src\": \"USP-NF\",\n    \"tgt\": \"美国药典-国家处方集\"\n  },\n  {\n    \"src\": \"Sulbactam Sodium\",\n    \"tgt\": \"磺巴坦钠\"\n  }\n]\n```"
+        }
+      ]
+    }
+  ]
+}
